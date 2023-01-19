@@ -7,6 +7,7 @@
     --main-background-color: #F4F4FD;
     --secondary-background-color: #E7E9FC;
     --link-color: #8E8F99;
+    --green-accent: #31D0AA;
 
     --main-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
@@ -353,6 +354,51 @@ body{
     letter-spacing: 0.02em;
 
     color: var(--secondary-background-color);
+}
+
+.footer .container {
+    display: flex;
+    column-gap: 120px;
+}
+
+.footer .list {
+    display: flex;
+    column-gap: 16px;
+}
+
+.footer .title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+
+    margin-bottom: 16px;
+
+    letter-spacing: 0.02em;
+    
+    color: var(---white-color);
+}
+
+.footer .link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer .link:hover,
+.footer .link:focus {
+    background-color: var(--green-accent);
+}
+
+.footer .icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    fill: var(--main-background-color);
 }
 
 .tab-list .button {
