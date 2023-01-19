@@ -6,6 +6,7 @@
     ---white-color: #FFFFFF;
     --main-background-color: #F4F4FD;
     --secondary-background-color: #E7E9FC;
+    --link-color: #8E8F99;
 
     --main-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
@@ -163,15 +164,25 @@ body{
     overflow: hidden;
 }
 
-/* .benefits-section .item::before {
-    content: "";
-    display: block;
+.element {
     width: 264px;
     height: 112px;
-
+    padding: 24px 100px;
+    
+    margin-bottom: 8px;
+    
     background-color: var(--main-background-color);
     border-radius: 4px;
-} */
+}
+
+.benefits-section .icon {
+    display: block;
+    width: 64px;
+    height: 64px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .benefits-section .title,
 .portfolio-section .title {
@@ -222,12 +233,99 @@ body{
 }
 
 .our-team-list .paragraph {
+    margin-bottom: 12px;
+
     line-height: 1.5;
 
     letter-spacing: 0.02em;
 
     color: var(---secondary-text-color);
 }
+
+.our-team-list .list {
+    display: flex;
+    column-gap: 24px;
+}
+
+.our-team-list .link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.our-team-list .icon {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-left: auto;
+    margin-right: auto;
+
+    fill: var(--link-color);
+}
+
+.our-team-list .link:hover,
+.our-team-list .link:focus {
+    background-color: var(--accent-color);
+}
+
+.our-team-list .link:hover .icon,
+.our-team-list .link:focus .icon{
+    fill: var(--main-background-color);
+}
+
+.customers-section .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    
+    letter-spacing: 0.03em;
+    
+    text-align: center;
+}
+
+.customers-section .list {
+    display: flex;
+    column-gap: 24px;
+}
+
+.customers-section .link {
+    display: block;
+    width: 168px;
+    height: 88px;
+
+    padding: 16px 32px;
+
+    border: 1px solid var(--link-color);
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.customers-section .icon {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.customers-section .icon {
+    fill: var(--link-color);
+}
+
+.customers-section .link:hover,
+.customers-section .link:focus {
+    border-color: var(--accent-color);
+}
+
+.customers-section .link:hover .icon,
+.customers-section .link:focus .icon {
+    fill: var(--accent-color);
+}
+
 
 .footer {
     background-color: var(--main-text-color);
@@ -405,10 +503,14 @@ header .container {
     margin-right: 24px;
 }
 
+.our-team-list .item {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .our-team-section .wrapper {
     padding: 32px 16px;
 
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); */
     border-radius: 0px 0px 4px 4px;
     text-align: center;
     background-color: var(---white-color);
@@ -416,6 +518,15 @@ header .container {
 
 .our-team-list .title {
     margin-bottom: 8px;
+}
+
+.customers-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.customers-section .title {
+    margin-bottom: 72px;
 }
 
 .footer {
@@ -477,5 +588,3 @@ header .container {
     border: 0.5px solid var(--main-background-color);
     border-top: none;
 }
-
-/* HW-04 markup */
