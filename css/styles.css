@@ -622,6 +622,7 @@ header .container {
 }
 
 .portfolio-section .title {
+    color: var(--main-text-color);
     margin-bottom: 8px;
 }
 
